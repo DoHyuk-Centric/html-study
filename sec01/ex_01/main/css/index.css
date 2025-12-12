@@ -1,0 +1,50 @@
+body{
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.6rem;
+    font-size: 18px;
+}
+
+/* Section : hero */
+.hero{
+    position: relative;
+    display: flex;
+    height: 700px;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.heading h1,
+.heading span{
+    display: block;
+    color: crimson;
+}
+
+.hero video{
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    
+}
+
+/* Section : contect */
+
+.contect{
+    margin: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.inner{
+    gap: 70px;
+    width: 1280px;
+    display: flex;
+    word-break: break-all;
+}
