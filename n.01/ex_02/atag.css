@@ -1,0 +1,11 @@
+/* Smooth Scroll */
+/*html{
+    scroll-behavior: smooth;
+}*/
+
+.atag a{
+    background-color: teal;
+    padding: 10px 20px;
+    color: white;
+    text-decoration: none;
+}
