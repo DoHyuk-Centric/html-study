@@ -1,8 +1,20 @@
 @font-face {
     font-family: 'Chirp Heavy';
-    src: url("./Chirp Heavy.ttf");
+    src: url("./Chirp\ Bold.ttf");
 }
 
+h1 {
+    margin: 0;
+    padding: 0;
+}
+
+html, body{
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+/*태블릿*/
 @media (max-width: 1024px) {
     .svgclass {
         width: 50px;
@@ -22,16 +34,39 @@
     }
 }
 
+/*데스크탑*/
 @media (min-width:1025px) {
+    .section1 {
+        /*로고 중앙정렬*/
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 45%;
+        height: auto;
+    }
+
+    /*버튼UI/UX*/
+    .section2{
+        padding-left: 100px;
+        width: 45%;
+        height: auto;
+    }
+
     .svgclass {
-        width: 100px;
+        width: 20vw;
     }
 
     .maincontainer {
+        margin: 0;
+        padding: 0;
         display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 92vh;
+        width: 100vw;
     }
 
-    .mainFont{
+    .mainFont {
         padding-left: 20px;
     }
 
@@ -40,26 +75,89 @@
         gap: 10px;
     }
 }
+/* 버튼 */
+.btncontainer {
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+}
+.or-divider{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 10px 0;
+}
+.or-divider .line{
+    flex: 1;
+    border: none;
+    border-top: 1px solid #ebebeb;
+}
+.btn-api {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    background-color: white;
+    border: 1px solid #ccc;
+    padding: 8px 16px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: 500;
+    width: 300px;
+    height: 40px;
+    margin-top: 15px;
+}
+
+.btn-api img {
+    height: 20px;
+}
+
+.btn-signin {
+    font-family: 'Chirp Heavy';
+    font-size: 15px;
+    color: white;
+    background-color: rgb(15, 20, 25);
+    border-radius: 20px;
+    padding: 8px 16px;
+    width: 300px;
+    height: 40px;
+    border: 1px solid white;
+    cursor: pointer;
+}
+.btn-api svg{
+    width: 20px;
+}
+.alreadyfont{
+    font-family: 'Chirp Heavy';
+}
+.policyfont{
+    font-size: 10px;
+    margin-top: 15px;
+}
 
 .mainFont {
     font-family: 'Chirp Heavy';
     font-size: 30px;
-    transform: scaleX(1.1);
+    color: rgb(15, 20, 25);
 }
 
-h1 {
-    margin: 0;
+p {
+    margin-top: 40px;
     padding: 0;
 }
 
-.maincontainer {
-    border: 5px solid black;
+.footer{
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin: 0;
+    padding: 0;
+    font-size: 11px;
+    color: #5c5c5c;
+    white-space: nowrap;
 }
 
-.mainFont {
-    border: 5px solid red;
-}
-
-.svgclass {
-    border: 5px solid blue;
+.footerline{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
