@@ -1,0 +1,65 @@
+@font-face {
+    font-family: 'Chirp Heavy';
+    src: url("./Chirp Heavy.ttf");
+}
+
+@media (max-width: 1024px) {
+    .svgclass {
+        width: 50px;
+    }
+
+    .maincontainer {
+        padding-left: 60px;
+        margin-top: 40px;
+    }
+
+    .h1c {
+        display: inline;
+    }
+
+    .mainFont {
+        margin-top: 50px;
+    }
+}
+
+@media (min-width:1025px) {
+    .svgclass {
+        width: 100px;
+    }
+
+    .maincontainer {
+        display: flex;
+    }
+
+    .mainFont{
+        padding-left: 20px;
+    }
+
+    .h1c {
+        display: flex;
+        gap: 10px;
+    }
+}
+
+.mainFont {
+    font-family: 'Chirp Heavy';
+    font-size: 30px;
+    transform: scaleX(1.1);
+}
+
+h1 {
+    margin: 0;
+    padding: 0;
+}
+
+.maincontainer {
+    border: 5px solid black;
+}
+
+.mainFont {
+    border: 5px solid red;
+}
+
+.svgclass {
+    border: 5px solid blue;
+}
