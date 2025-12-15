@@ -1,3 +1,5 @@
+@import url(./CSS/button/buttonLayout.css);
+
 @font-face {
     font-family: 'Chirp Heavy';
     src: url("./Chirp\ Bold.ttf");
@@ -16,6 +18,9 @@ html, body{
 
 /*태블릿*/
 @media (max-width: 1024px) {
+    html, body{
+        overflow-y: scroll;
+    }
     .svgclass {
         width: 50px;
     }
@@ -23,6 +28,7 @@ html, body{
     .maincontainer {
         padding-left: 60px;
         margin-top: 40px;
+        margin-bottom: 70px;
     }
 
     .h1c {
@@ -75,58 +81,8 @@ html, body{
         gap: 10px;
     }
 }
-/* 버튼 */
-.btncontainer {
-    width: 300px;
-    display: flex;
-    flex-direction: column;
-}
-.or-divider{
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    margin: 10px 0;
-}
-.or-divider .line{
-    flex: 1;
-    border: none;
-    border-top: 1px solid #ebebeb;
-}
-.btn-api {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 8px;
-    background-color: white;
-    border: 1px solid #ccc;
-    padding: 8px 16px;
-    border-radius: 20px;
-    cursor: pointer;
-    font-weight: 500;
-    width: 300px;
-    height: 40px;
-    margin-top: 15px;
-}
 
-.btn-api img {
-    height: 20px;
-}
 
-.btn-signin {
-    font-family: 'Chirp Heavy';
-    font-size: 15px;
-    color: white;
-    background-color: rgb(15, 20, 25);
-    border-radius: 20px;
-    padding: 8px 16px;
-    width: 300px;
-    height: 40px;
-    border: 1px solid white;
-    cursor: pointer;
-}
-.btn-api svg{
-    width: 20px;
-}
 .alreadyfont{
     font-family: 'Chirp Heavy';
 }
@@ -151,13 +107,29 @@ p {
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
-    margin: 0;
+    margin-bottom: 10px;
     padding: 0;
     font-size: 11px;
-    color: #5c5c5c;
     white-space: nowrap;
+    color: #5c5c5c;
+}
+.footer a{
+    color: #5c5c5c;
+    text-decoration-line: none;
+}
+.footer a:hover{
+    text-decoration-line: underline;
 }
 
 .footerline{
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+/* Create account 버튼 아래 구문 */
+.policyfont a{
+    text-decoration-line: none;
+    color: rgb(110, 110, 255);
+}
+.policyfont a:hover{
+    text-decoration: underline;
 }

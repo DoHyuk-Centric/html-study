@@ -1,0 +1,23 @@
+/* 구글 버튼 */
+#google_btn:hover{
+    background-color: rgba(200, 225, 255, 0.5);
+    transition-duration: 0.5s;
+}
+
+/* 애플 버튼 */
+#apple_btn:hover{
+    background-color: rgba(170, 170, 170, 0.5);
+    transition-duration: 0.5s;
+}
+
+/* 계정 만들기 버튼 */
+#create_btn:hover{
+    background-color: rgb(45, 50, 55);
+    transition-duration: 0.5s;
+}
+
+/* Sign in, Get the app 버튼 */
+#signin_btn:hover, #getTheApp_btn:hover{
+    background-color: rgba(170, 170, 170, 0.5);
+    transition-duration: 0.5s;
+}
