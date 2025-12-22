@@ -4,18 +4,17 @@ const menuBar = document.getElementById("menuBar");
 
 menuBtn.addEventListener("click", (e) => {
     e.stopPropagation();
-    menuBar.classList.toggle("hidden");
-
+    menuBar.classList.toggle("-translate-x-full")
 })
 
 menuExitBtn.addEventListener("click", () => {
-    menuBar.classList.toggle("hidden");
+    menuBar.classList.toggle("-translate-x-full")
 })
 
 document.addEventListener("click", (e) => {
-    if(!menuBar.classList.contains("hidden")){
+    if(!menuBar.classList.contains("-translate-x-full")){
         if(!menuBar.contains(e.target) && !menuBtn.contains(e.target)){
-            menuBar.classList.add("hidden");
+            menuBar.classList.toggle("-translate-x-full")
         }
     }
 });
