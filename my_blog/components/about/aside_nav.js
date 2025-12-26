@@ -9,29 +9,12 @@ mainContainer.addEventListener("scroll", () => {
     document.getElementById("introduction_section_5"),
     document.getElementById("introduction_section_6"),
   ];
-
+  const asideNav = document.getElementById("aside_nav");
   const index = getCurrentSectionIndex(mainContainer.scrollTop);
-  const asideBtn = document.querySelectorAll("#about_aside_btn");
+  const asideBtn = document.querySelectorAll(".about_aside_btn");
 
-  switch (index) {
-    case 0:
-      actionAsideNav(0);
-      break;
-    case 1:
-      actionAsideNav(1);
-      break;
-    case 2:
-      actionAsideNav(2);
-      break;
-    case 3:
-      actionAsideNav(3);
-      break;
-    case 4:
-      actionAsideNav(4);
-      break;
-    case 5:
-      actionAsideNav(5);
-      break;
+  if (index !== -1) {
+    actionAsideNav(index);
   }
 
   function getCurrentSectionIndex(scrollTop) {
@@ -39,7 +22,7 @@ mainContainer.addEventListener("scroll", () => {
       const currentScroll = section[i];
       const nextScroll = section[i + 1];
 
-      if(!nextScroll) {
+      if (!nextScroll && scrollTop >= currentScroll.offsetTop) {
         return i;
       }
       if (
