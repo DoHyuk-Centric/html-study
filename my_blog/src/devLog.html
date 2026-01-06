@@ -159,21 +159,24 @@
                     <div class="flex flex-col justify-center items-center">
                         <div class="border rounded-xl w-90 p-2 bg-gray-100 dark:bg-gray-700">
                             <div class="relative flex w-full">
-                                <button
+                                <button id="prevMonthBtn"
                                     class="border rounded-xl w-10 cursor-pointer hover:bg-gray-300 dark:hover:bg-gray-600">
                                     &lt; </button>
-                                <span class="ml-auto">2026.01</span>
-                                <button
+                                    <div class="ml-auto flex gap-3">
+                                        <span id="calendar_Year"></span><span id="calendar_Month"></span>
+                                    </div>
+                                <button id="nextMonthBtn"
                                     class="border rounded-xl w-10 cursor-pointer justify-end ml-auto hover:bg-gray-300 dark:hover:bg-gray-600">
                                     &gt;
                                 </button>
                             </div>
-                            <div class="border w-full flex-col mt-1">
-                                <div class="grid grid-cols-7 text-center">
+                            <div class="border w-full flex-col mt-2">
+                                <div class="grid grid-cols-7 text-center mt-2 border-b border-gray-300 dark:border-gray-600 pb-2">
                                     <div class="text-red-500 dark:text-red-400">일</div><div>월</div><div>화</div><div>수</div><div>목</div><div>금</div><div class="text-blue-500 dark:text-blue-400">토</div>
                                 </div>
-                                <div id="calender_day" class="grid grid-cols-7 text-center">
-                                    <div>1</div>
+                                <div id="calendar_day" class="grid grid-cols-7 text-center gap-y-3 mt-2 mb-2">
+                                    <div class="text-gray-400"><!--PrevDay, NextDay 색상--></div>
+                                    <!--날짜 들어가는 곳-->
                                 </div>
                             </div>
                         </div>
